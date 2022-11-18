@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
+import GrandPa from "./components/GrandPa/GrandPa";
 import Home from "./components/Home/Home";
 import Orders from "./components/Orders/Orders";
 import Main from "./layouts/Main";
@@ -16,6 +17,7 @@ function App() {
           element: <Home></Home>,
         },
         { path: "/orders", element: <Orders></Orders> },
+        { path: "/grandpa", element: <GrandPa></GrandPa> },
         { path: "/about", element: <About></About> },
       ],
     },
